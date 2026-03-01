@@ -11,5 +11,6 @@ phases:
       - npm install
   build:
     commands:
+      - cd ./my-app
       - echo run tests...
       - CI=true npm run test
