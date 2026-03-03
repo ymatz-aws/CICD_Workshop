@@ -9,9 +9,10 @@ export default defineConfig({
   plugins: [react()],
   base: '/my-app',
   server: {
+    allowedHosts: true,
     host: true,
     port: 8081,
-    allowedHosts: ['.ap-northeast-1.elb.amazonaws.com'],
+    // allowedHosts: ['.ap-northeast-1.elb.amazonaws.com'],
   },
   test: {
     globals: true,
